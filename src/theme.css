@@ -139,3 +139,78 @@ body {
     transition-duration: .01ms !important;
   }
 }
+
+
+/* ===== MOBILE RESPONSIVE FIX ===== */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  scroll-behavior: smooth;
+  overflow-x: clip;
+}
+
+body,
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  overflow-x: clip;
+}
+
+.brand-title {
+  font-size: clamp(12px, 3.5vw, 20px);
+  white-space: nowrap;
+}
+
+.language-toggle {
+  min-height: 40px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 380px) {
+  .brand-title {
+    font-size: 12px;
+    letter-spacing: -0.4px;
+  }
+
+  .language-toggle {
+    padding: 7px 8px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 340px) {
+  .brand-title {
+    font-size: 10px;
+  }
+
+  .brand-link img {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (max-width: 640px) {
+  .hero-bg h1 {
+    overflow-wrap: anywhere;
+  }
+
+  .service-card:hover,
+  .quick-card:hover {
+    transform: none;
+  }
+}
