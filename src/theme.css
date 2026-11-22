@@ -1,0 +1,141 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap');
+
+:root {
+  font-family: 'DM Sans', 'Noto Sans Devanagari', sans-serif;
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #f5f8ff;
+}
+
+::selection {
+  background: #ffb36e;
+  color: #132452;
+}
+
+.top-strip {
+  background: linear-gradient(90deg, #101f52 0%, #1e4294 60%, #285db5 100%);
+}
+
+.hero-bg {
+  background:
+    radial-gradient(circle at 82% 18%, rgba(255,166,92,.20), transparent 27%),
+    radial-gradient(circle at 10% 70%, rgba(77,139,255,.16), transparent 35%),
+    linear-gradient(135deg, #f0f6ff 0%, #ffffff 52%, #fff5eb 100%);
+}
+
+.hero-panel {
+  box-shadow: 0 28px 70px rgba(25,57,126,.25);
+}
+
+.quick-card {
+  transition: transform .22s ease, box-shadow .22s ease;
+}
+
+.quick-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 35px rgba(40,85,160,.16);
+}
+
+.about-panel {
+  box-shadow: 0 22px 50px rgba(18,43,99,.18);
+}
+
+.service-card {
+  position: relative;
+  overflow: hidden;
+  transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto;
+  height: 4px;
+  background: linear-gradient(90deg, #2563eb, #f97316);
+  opacity: .9;
+}
+
+.service-card:hover {
+  transform: translateY(-7px);
+  border-color: #b9d0ff;
+  box-shadow: 0 22px 42px rgba(38,76,145,.14);
+}
+
+.service-icon {
+  width: 54px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+  border-radius: 17px;
+  border: 1px solid transparent;
+}
+
+.service-icon.blue {
+  color: #1d4ed8;
+  background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+  border-color: #bfdbfe;
+}
+
+.service-icon.green {
+  color: #07834b;
+  background: linear-gradient(135deg, #dcfce7, #bbf7d0);
+  border-color: #bbf7d0;
+}
+
+.service-icon.purple {
+  color: #7e22ce;
+  background: linear-gradient(135deg, #f3e8ff, #e9d5ff);
+  border-color: #e9d5ff;
+}
+
+.service-icon.orange {
+  color: #c2410c;
+  background: linear-gradient(135deg, #ffedd5, #fed7aa);
+  border-color: #fed7aa;
+}
+
+.service-icon.pink {
+  color: #be185d;
+  background: linear-gradient(135deg, #fce7f3, #fbcfe8);
+  border-color: #fbcfe8;
+}
+
+.help-banner {
+  box-shadow: 0 20px 45px rgba(234,105,31,.20);
+}
+
+.contact-card a[href^='tel:'] {
+  background: linear-gradient(100deg, #1e3a8a, #315fbd);
+}
+
+.contact-card a[href^='https://wa.me'] {
+  background: linear-gradient(100deg, #0d9f61, #22c55e);
+}
+
+.site-footer {
+  background-image:
+    radial-gradient(circle at 12% 10%, rgba(49,94,183,.20), transparent 25%),
+    linear-gradient(135deg, #07132f, #091a3d);
+}
+
+.site-footer a {
+  transition: color .18s ease, transform .18s ease;
+}
+
+.site-footer a:hover {
+  color: #ffb36e;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+  }
+}
